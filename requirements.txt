@@ -5,6 +5,7 @@ sentence-transformers
 torch>=2.2.0,<2.5.0
 altair==4.2.2
 kagglehub
+faiss-gpu
 
  # (use GPU version if you have a GPU on the server)
 
