@@ -2,5 +2,6 @@ streamlit==1.18.0
 pandas
 requests
 sentence-transformers
-torch==2.1.0+cpu  # (use GPU version if you have a GPU on the server)
+torch==2.1.0
+ # (use GPU version if you have a GPU on the server)
 
