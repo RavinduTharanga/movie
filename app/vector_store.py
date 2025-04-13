@@ -4,7 +4,7 @@ import numpy as np
 
 class VectorStore:
     def __init__(self, movie_texts):
-        self.model = SentenceTransformer("all-MiniLM-L6-v2", device='cuda')
+        self.model = SentenceTransformer("all-MiniLM-L6-v2")
         self.movie_texts = movie_texts
         self.embeddings = self.model.encode(movie_texts, show_progress_bar=True)
         self.index = faiss.IndexFlatL2(self.embeddings.shape[1])
